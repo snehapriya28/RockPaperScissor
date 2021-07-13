@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <a id="logo" href="#"><i class="fas fa-headset">AKS</i></i></a>
+        <div class="container1">
+            <div class="noOfRound">
+                <h2>ROUND - <span id = 'roundCount'> 0</span></h2>
+            </div>
+            <div class="score">
+                <h3 id="yourWin">WIN - <span id="yourWinCount"> 0</span></h3>
+                <h3 id="tie">TIES - <span id="tieCount"> 0</span></h3>
+                <h3 id="compWin">WIN - <span id="compWinCount"> 0</span></h3>
+            </div>
+            <hr>
+            <div class="hand">
+                <div class="leftHand">
+                    <img id="leftHandImg" src="images\leftHand\img1.png" alt="error loading">
+                    <div class="playButton">
+                        <button class="btn" onclick="youChoose(1)"><i class="far fa-hand-rock" style="background-color: transparent;"></i></button>
+                        <button class="btn" onclick="youChoose(2)"><i class="far fa-hand-paper" style="background-color: transparent;"></i></button>
+                        <button class="btn" onclick="youChoose(3)"><i class="far fa-hand-scissors" style="background-color: transparent;"></i></button>
+                    </div>
+                </div>
+                <h1 id="whoIsWinner">Play now</h1>
+                <div class="rightHand">
+                    <img id="rightHandImg" src="images\rightHand\img1.png" alt="error loading">
+                </div> 
+            </div>
+            
+            <div class="reset">
+                <button id="reload" onclick="reloadThePage()">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
